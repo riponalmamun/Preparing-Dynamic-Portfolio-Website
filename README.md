@@ -21,6 +21,26 @@
 
 # 🚀 Demo: https://riponalmamun.github.io/Preparing-Dynamic-Portfolio-Website/
 
+# Submitted To,
+Nishat Tasnim Niloy
+
+Lecturer,
+
+Department of Computer Science and Engineering, East West University.
+
+
+# Submitted By,
+Student Name Student ID
+
+Md Ripon Al Mamun 2021-2-60-083
+
+Bishowjit Banik 2020-2-60-108
+
+Md. Imran Khan 2021-3-60-206
+
+Shafqat Hossain Srijon 2020-1-60-095
+
+Mahmud Bin Shafi 2021-1-60-088
 
 
 
