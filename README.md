@@ -30,7 +30,7 @@ Department of Computer Science and Engineering, East West University.
 
 
 # Submitted By,
-Student Name Student ID
+Student Name------ Student ID
 
 Md Ripon Al Mamun 2021-2-60-083
 
