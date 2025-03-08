@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Portfolio Generator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Create Your Dynamic Portfolio</h1>
+      <div class="header-options">
+        <select id="language-selector">
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+        </select>
+        <button id="theme-toggle">Toggle Dark/Light Mode</button>
+        <button id="home-btn" style="display: none;">Home</button>
+        <button id="logout-btn" style="display: none;">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Login Form -->
+    <div id="login-form" class="form-container">
+      <h2>Login to Generate Portfolio</h2>
+      <form id="login">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="javascript:void(0);" id="go-to-signup">Sign Up</a></p>
+    </div>
+
+    <!-- Sign Up Form (Hidden initially) -->
+    <div id="signup-form" class="form-container" style="display: none;">
+      <h2>Sign Up to Create Portfolio</h2>
+      <form id="signup">
+        <input type="email" id="signup-email" placeholder="Enter your email" required>
+        <input type="password" id="signup-password" placeholder="Create a password" required>
+        <input type="password" id="confirm-password" placeholder="Confirm password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="javascript:void(0);" id="go-to-login">Login</a></p>
+    </div>
+
+    <!-- Portfolio Form (Hidden initially) -->
+    <div id="portfolio-form" class="form-container" style="display: none;">
+      <h2>Create Your Portfolio</h2>
+      <form id="portfolio">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" placeholder="Your full name" required>
+        
+        <label for="contact-info">Contact Information:</label>
+        <input type="text" id="contact-info" placeholder="Your contact details" required>
+        
+        <label for="photo">Upload a Photo (jpg/png):</label>
+        <input type="file" id="photo" accept=".jpg, .png" required>
+        <img id="image-preview" src="" alt="Preview" style="max-width: 200px; margin-top: 10px;" />
+        
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" placeholder="Write a short bio"></textarea>
+
+        <h3>Skills</h3>
+        <label for="soft-skills">Soft Skills:</label>
+        <input type="text" id="soft-skills" placeholder="e.g., Communication, Leadership">
+
+        <label for="technical-skills">Technical Skills:</label>
+        <input type="text" id="technical-skills" placeholder="e.g., JavaScript, Python">
+
+        <h3>Academic Background (Optional)</h3>
+        <label for="institute">Institute:</label>
+        <input type="text" id="institute" placeholder="e.g., XYZ University">
+        
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" placeholder="e.g., BSc in Computer Science">
+        
+        <label for="year">Year of Graduation:</label>
+        <input type="text" id="year" placeholder="e.g., 2023">
+        
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" placeholder="e.g., A">
+
+        <h3>Work Experience</h3>
+        <div id="work-experience-container"></div>
+        <button type="button" id="add-work-experience">Add Work Experience</button>
+
+        <h3>Projects/Publications (Optional)</h3>
+        <label for="projects">Previous Projects/Publications:</label>
+        <textarea id="projects" placeholder="Optional information about your projects"></textarea>
+
+        <button type="submit">Generate Portfolio</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dynamic Portfolio Generator</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

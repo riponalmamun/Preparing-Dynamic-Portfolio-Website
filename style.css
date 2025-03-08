@@ -1,0 +1,154 @@
+/* General Styling */
+body {
+  background: url('image/ewu.png') no-repeat center center fixed; /* Replace with your actual image URL */
+  background-size: cover;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b5c3d1;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+header {
+  background-color: #3E8E41;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header-options {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+header select, header button {
+  padding: 10px;
+  background-color: #fff;
+  color: #3E8E41;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header button:hover, header select:hover {
+  background-color: #3E8E41;
+  color: white;
+}
+
+/* Form Containers */
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #3E8E41;
+}
+
+form {
+  display: grid;
+  gap: 20px;
+}
+
+input, textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 100%;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #3E8E41;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2b6b2f;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: px 0;
+  background-color: #333;
+  color: white;
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
+p a {
+  color: #3E8E41;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background-color: #121212;
+  color: #ddd;
+}
+
+.dark-theme header {
+  background-color: #1a3c25;
+}
+
+.dark-theme form input, .dark-theme form textarea {
+  background-color: #333;
+  color: white;
+  border: 1px solid #444;
+}
+
+.dark-theme form button {
+  background-color: #2b6b2f;
+}
+
+/* Style for Smaller Devices */
+@media (max-width: 600px) {
+  .header-content h1 {
+    font-size: 28px;
+  }
+
+  .header-options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  form {
+    gap: 15px;
+  }
+}
