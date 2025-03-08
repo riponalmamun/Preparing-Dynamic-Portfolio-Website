@@ -17,7 +17,7 @@
 5.	Once the user confirms the entry of the data, you will generate a pdf and also store the information in a database.
 6.	You can develop this project in any language. Save this project in Git repository.
 
-✍🏻 This project enables users to create, customize, and generate professional portfolios. Key features include user authentication, structured data entry (personal info, skills, experience, academics, projects), PDF generation, and database storage. The goal is to provide a seamless and user-friendly portfolio-building experience. 🚀
+
 
 # 🚀 Demo: https://riponalmamun.github.io/Preparing-Dynamic-Portfolio-Website/
 
